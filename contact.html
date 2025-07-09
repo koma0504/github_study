@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio - お問い合わせ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Creative Studio</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">会社について</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">お問い合わせ</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                <p>プロジェクトのご相談やご質問など、お気軽にお問い合わせください</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>お気軽にご連絡ください</h2>
+                        <p>私たちは新しいプロジェクトや挑戦的なアイデアについてお話しすることを楽しみにしています。どんな小さなご質問でも、お気軽にお問い合わせください。</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h4>住所</h4>
+                                    <p>〒100-0001<br>東京都千代田区千代田1-1-1<br>クリエイティブビル5F</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-text">
+                                    <h4>電話</h4>
+                                    <p>03-1234-5678</p>
+                                    <span class="contact-hours">平日 9:00-18:00</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <h4>メール</h4>
+                                    <p>info@creativestudio.com</p>
+                                    <span class="contact-hours">24時間以内に返信します</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>SNSでもつながりましょう</h4>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">📘</a>
+                                <a href="#" class="social-icon">🐦</a>
+                                <a href="#" class="social-icon">📷</a>
+                                <a href="#" class="social-icon">💼</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <h3>プロジェクトについて教えてください</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">お名前 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company">会社名</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project">プロジェクトタイプ</label>
+                                <select id="project" name="project">
+                                    <option value="">選択してください</option>
+                                    <option value="web-design">ウェブデザイン</option>
+                                    <option value="web-development">ウェブ開発</option>
+                                    <option value="branding">ブランディング</option>
+                                    <option value="app-design">アプリデザイン</option>
+                                    <option value="consulting">コンサルティング</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">予算</label>
+                                <select id="budget" name="budget">
+                                    <option value="">選択してください</option>
+                                    <option value="under-100">100万円未満</option>
+                                    <option value="100-300">100万円〜300万円</option>
+                                    <option value="300-500">300万円〜500万円</option>
+                                    <option value="500-1000">500万円〜1000万円</option>
+                                    <option value="over-1000">1000万円以上</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline">希望納期</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">選択してください</option>
+                                    <option value="asap">できるだけ早く</option>
+                                    <option value="1-month">1ヶ月以内</option>
+                                    <option value="3-months">3ヶ月以内</option>
+                                    <option value="6-months">6ヶ月以内</option>
+                                    <option value="flexible">柔軟に対応</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">プロジェクトの詳細 *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="プロジェクトの内容、目標、要件などをお聞かせください" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                メッセージを送信
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>一緒に素晴らしいものを作りましょう</h2>
+                    <p>あなたのビジョンを現実に変えるお手伝いをさせてください。</p>
+                    <a href="tel:03-1234-5678" class="btn btn-secondary">今すぐ電話する</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Creative Studio</h3>
+                    <p>クリエイティブな未来を一緒に創造しましょう。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">会社について</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>📧 info@creativestudio.com</p>
+                    <p>📞 03-1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creative Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('ありがとうございます！メッセージを受け取りました。24時間以内にご返信いたします。');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html> 
